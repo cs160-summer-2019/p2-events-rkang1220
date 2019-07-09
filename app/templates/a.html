@@ -64,6 +64,36 @@
 
 <script type="text/javascript">
 	// your solution here
+  $(document).ready(() => {
+    const $purpleCircle = $('.bg-purple');
+    
+    $purpleCircle.on('click', () => {
+      $purpleCircle.hide();
+    })
+    
+    $('.bg-green').on('click', () => {
+      $('.bg-green').hide();
+      $('.bg-blue').hide();
+    })
+    
+    $('.bg-orange.p2-border').on('click', () => {
+      $('.bg-orange.p2-border').hide();
+    })
+    
+    $('#gradient-circle').hover(function() {
+      $('#gradient-circle').hide();
+    });
+    
+    $('.float-right').on('click', () => {
+      $purpleCircle.show();
+      $('.bg-green').show();
+      $('.bg-blue').show();
+      $('.bg-orange.p2-border').show();
+      $('#gradient-circle').show();
+    })
+    
+})
+  
 
 </script>
 </body>

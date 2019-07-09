@@ -39,9 +39,19 @@
 
 
 <script type="text/javascript">
-
+  
 	// your solution here
-
+  $(document).ready(() => {
+    
+    var lmao = setInterval(function() { 
+      $(".shape-container").append($('<div class="p2-circle bg-blue"></div>')); }, 1000);
+  
+    $('.float-right').on('click', () => {
+      clearInterval(lmao)
+    })
+    
+})
+  
 </script>
 </body>
 </html>
